@@ -3,6 +3,7 @@ module go_in_practice
 go 1.25.3
 
 require (
+	github.com/Masterminds/cookoo v1.3.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/kylelemons/go-gypsy v1.0.0 // indirect
 	github.com/spf13/cobra v1.10.2 // indirect
