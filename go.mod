@@ -4,6 +4,7 @@ go 1.25.3
 
 require (
 	github.com/Masterminds/cookoo v1.3.0 // indirect
+	github.com/Masterminds/go-fileserver v0.0.0-20150404113552-04d61ae6d130 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/golang-jwt/jwt/v5 v5.3.1 // indirect
