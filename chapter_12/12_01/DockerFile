@@ -1,0 +1,14 @@
+# Простая многоэтапная сборка Docker-образа Go-приложения
+FROM golang:1.22 as build
+
+RUN useradd --create-home --shell /bin/bash appbuild
+RUN mkdir /home/appbuild/bin
+
+COPY * /home/appbuild
+
+WORKDIR /home/appbuild
+Run go build -o bin/app/main.go
+
+FROM ubuntu:mantic
+RUN useradd --create-home --shell /bin/bash apprun
+CMD ["/home/apprun/app"]
